@@ -26,8 +26,14 @@ jobs:
         with:
           node-version: '16' # or the version you need
 
+      - name: Print IST and UTC Times
+        run: |
+          echo "Current UTC Time: $(date -u)"
+          echo "Current IST Time: $(TZ='Asia/Kolkata' date)"
+
       # - name: Install Dependencies (if needed)
       #   run: npm install
+
       - name: Run some action
         run: echo "Hello, World!"
 
