@@ -4,6 +4,7 @@ on:
   schedule:
     # Runs every 5 minutes
     - cron: '*/5 * * * *'
+    - cron: '30 5 * * 3'    # Runs every Wednesday at 12:00 AM IST (5:30 AM UTC)
     # # Runs at 9:00 AM UTC daily (adjust to your preferred time)
     # - cron: '0 9 * * *'
     # # Runs every Friday at 12:00 AM
