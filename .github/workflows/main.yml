@@ -23,8 +23,8 @@ jobs:
         with:
           node-version: '16' # or the version you need
 
-      - name: Install Dependencies (if needed)
-        run: npm install
+      # - name: Install Dependencies (if needed)
+      #   run: npm install
 
       - name: Run myfile.js
         run: node myfile.js
